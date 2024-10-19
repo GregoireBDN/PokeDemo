@@ -1,0 +1,32 @@
+#searchContainer,
+#selectContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#searchContainer input,
+select {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--div);
+  color: var(--text);
+  width: 250px;
+}
+
+#searchContainer input {
+  text-align: center;
+}
+
+select {
+  text-transform: capitalize;
+  max-height: 38px;
+  overflow: hidden;
+}
+
+input {
+  outline: none;
+}

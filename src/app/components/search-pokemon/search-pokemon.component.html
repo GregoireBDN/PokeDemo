@@ -1,0 +1,20 @@
+<div id="searchContainer">
+  <input type="text" placeholder="ex :  maceo" [(ngModel)]="searchPokeName" />
+  <div id="selectContainer">
+    <select [(ngModel)]="selectPokeId" (change)="go()">
+      <option
+        *ngFor="
+          let pokemon of pokeList | filterPokemonPipe : 'name' : searchPokeName
+        "
+        [value]="pokemon.id"
+      >
+        {{ pokemon.name }}
+      </option>
+    </select>
+  </div>
+  <div *ngIf="selectPokeDetails">
+    <app-pokemon-details
+      [pokeDetails]="selectPokeDetails"
+    ></app-pokemon-details>
+  </div>
+</div>

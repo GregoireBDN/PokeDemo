@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "ProtestStrike";
+  font-weight: 400;
+  src: url("../public/font/ProtestStrike-Regular.ttf");
+}
+:root {
+  /* Couleurs principales */
+  --background: #645aa4;
+  --font: #98c8de;
+  --div: #313167;
+}
+body {
+  font-family: "ProtestStrike";
+  color: var(--font);
+  background-color: var(--background);
+}
