@@ -1,14 +1,44 @@
 <div id="pokeCard" *ngIf="pokeDetails">
-  <h2>{{ pokeDetails.name }}</h2>
-  <img
-    (click)="onClickImg()"
-    src="{{ pokeDetails.sprites.front_default }}"
-    alt="{{ pokeDetails.name }}"
-  />
-  <ul>
-    <p>Abilities</p>
-    <li *ngFor="let ability of pokeDetails.abilities!">
-      {{ ability.ability.name }}
-    </li>
-  </ul>
+  <div class="pokemon-info">
+    <div class="pokemon-header">
+      <h2>{{ pokeDetails.name }}</h2>
+      <span class="pokemon-id"
+        >#{{ pokeDetails.id.toString().padStart(3, "0") }}</span
+      >
+    </div>
+    <img
+      (click)="onClickImg()"
+      src="{{ pokeDetails.sprites.front_default }}"
+      alt="{{ pokeDetails.name }}"
+    />
+    <div class="pokemon-types">
+      <span
+        *ngFor="let type of pokeDetails.types"
+        class="type-badge {{ type.type.name }}"
+      >
+        {{ type.type.name }}
+      </span>
+    </div>
+  </div>
+  <div class="pokemon-details">
+    <div class="pokemon-stats">
+      <div *ngFor="let stat of pokeDetails.stats" class="stat-bar">
+        <span class="stat-name">{{ stat.stat.name }}</span>
+        <div
+          class="stat-value-bar"
+          [style.width.%]="(stat.base_stat / 255) * 100"
+        >
+          <span class="stat-value">{{ stat.base_stat }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="pokemon-abilities">
+      <h3>Capacités</h3>
+      <ul>
+        <li *ngFor="let ability of pokeDetails.abilities">
+          {{ ability.ability.name }}
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>

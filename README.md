@@ -1,27 +1,34 @@
 # Pokedemo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
+Ce projet a été généré avec [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9 dans le cadre d'un TP de Master en Ingénierie Logicielle.
 
-## Development server
+## À propos du projet
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Cette application Pokedemo a été développée comme exercice pratique pour le cours de Développement Web du Master en Ingénierie Logicielle. L'objectif était de créer une application Angular interactive utilisant une API externe (PokeAPI) pour découvrire angular et les intégrations d'API.
 
-## Code scaffolding
+## Fonctionnalités
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Recherche de Pokémon par nom
+- Affichage des détails des Pokémon
+- Clicker sur le Pokémon pour entendre son cri
+- Responsive
+
+## Serveur de développement
+
+Exécutez `ng serve` pour un serveur de développement. Naviguez vers `http://localhost:4200/`. L'application se rechargera automatiquement si vous modifiez l'un des fichiers source.
+
+## Génération de code
+
+Exécutez `ng generate component nom-du-composant` pour générer un nouveau composant. Vous pouvez également utiliser `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Exécutez `ng build` pour construire le projet. Les artefacts de build seront stockés dans le répertoire `dist/`.
 
-## Running unit tests
+## Aide supplémentaire
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Pour obtenir plus d'aide sur Angular CLI, utilisez `ng help` ou consultez la page [Vue d'ensemble et référence des commandes d'Angular CLI](https://angular.dev/tools/cli).
 
-## Running end-to-end tests
+## Auteurs
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Ce projet a été réalisé par Grégoire BODIN et Léo Bernard-Bodier dans le cadre du Master en Ingénierie Logicielle à L'Istic.
